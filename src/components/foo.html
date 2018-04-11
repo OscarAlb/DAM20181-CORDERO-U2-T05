@@ -1,0 +1,31 @@
+<ion-list>
+  
+    <ion-card *ngIf="data.myToggle">
+        <ion-card-header>
+            Hombre
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <button ion-item>Barba</button>
+                <button ion-item>Bigote</button>
+                <button ion-item>Feo</button>
+                <button ion-item>Furte</button>
+                <button ion-item>Formal</button>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngIf="!data.myToggle">
+        <ion-card-header>
+            Mujer
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <button ion-item>Bonita</button>
+                <button ion-item>Cabello Largo</button>
+                <button ion-item>INteligente</button>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
+</ion-list>
